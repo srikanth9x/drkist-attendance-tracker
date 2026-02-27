@@ -95,7 +95,8 @@ export async function POST(req: Request) {
             message:
                 "SignUp successfull! please check your inbox to verify your email.",
         });
-    } catch (error) {
-        return NextResponse.json({ error: error.message }, { status: 500 });
+    } catch (error: any) {
+        return NextResponse.json({ error: error.message },
+        { status: 500 });
     }
 }
