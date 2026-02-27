@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 export function Navbar() {
-  const supabase = createClientComponentClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!);
+  const supabase = createClientComponentClient();
   const router = useRouter();
   const pathname = usePathname();
   const hideSignOut = pathname === "/" || pathname === "/auth/signup" || pathname === "/auth/signin";
