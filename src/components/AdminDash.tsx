@@ -184,6 +184,23 @@ export default function AdminDash() {
                     'Increment semester'
                 )}
             </button>
+            
+            <section className='w-full flex flex-col gap-2 p-2 rounded bg-neutral-100 dark:bg-neutral-900 border border-neutral-500 border-t border-t-neutral-400 dark:border-t-neutral-600'>
+              <a
+          href="/templates/students.xlsx"
+          download
+          className="text-red-500"
+        >
+          Download Students Excel Template
+        </a>
+        <a
+          href="/templates/faculty-advisors.xlsx"
+          download
+          className="text-red-500"
+        >
+          Download Faculty Advisors Excel Template
+        </a>
+            </section>
         </main>
     );
 }

@@ -77,7 +77,15 @@ export default function FacultyAdvDash() {
               'Update'
             }
           </button>
-            
+        </section>
+        <section className='w-full flex flex-col gap-2 p-2 rounded bg-neutral-100 dark:bg-neutral-900 border border-neutral-500 border-t border-t-neutral-400 dark:border-t-neutral-600'>
+          <a
+          href="/templates/attendance.xlsx"
+          download
+          className="text-red-500"
+        >
+          Download Attendence Excel Template
+        </a>
         </section>
       </main>
       

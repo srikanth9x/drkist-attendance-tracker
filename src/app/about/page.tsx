@@ -69,7 +69,7 @@ export default function AboutPage() {
             href="https://srikanth9x.pages.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className='text-blue-600 dark:text-blue-400 underline'
+            className='text-red-500 underline'
           >
             Visit Personal Webpage
           </a>
