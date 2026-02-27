@@ -1,4 +1,10 @@
-export function MessageBox({ type, message }) {
+type MessageBoxProps = {
+  type: "success" | "error" | "info";
+  message: string | null;
+};
+
+
+export function MessageBox({ type, message }: MessageBoxProps) {
   if(!message) {
     return null;
   }
