@@ -65,7 +65,7 @@ export async function POST(req: Request) {
                 email,
                 password,
                 options: {
-                     emailRedirectTo: "http://localhost:3000/auth/signin",
+                     emailRedirectTo: "https://drkist.vercel.app/auth/signup",
                 },
             });
 
